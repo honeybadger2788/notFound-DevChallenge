@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@600&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html { font-size: 100%; }
+
+header  {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+h3 { font-family: 'Inconsolata'; }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    height: 85vh;
+}
+
+img {
+    width: 75%;
+    margin: 2rem 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Space mono';
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+p {
+    font-family: 'Space mono';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+button {
+    font-family: 'Space mono';
+    font-weight: 700;
+    font-size: 0.875rem;
+    background: #333333;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 24px 43px;
+    align-self: start;
+}
+
+footer {
+    margin: 42px 0;
+    display: flex;
+    justify-content: center;
+}
+
+small {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) and (min-width: 426px){
+    img {
+        width: 400px;
+        height: auto;
+        margin: 0 75px;
+    }
+    article {
+        margin: 0 115px;
+    }
+}
+
+@media (min-width: 769px){
+    section { flex-direction: row; }
+    
+    img {
+        width: 33.75rem;
+        height: auto;
+        margin: 0 4.6875rem;
+    }
+
+    article {
+        height: 65vh;
+        margin-right: 130PX;
+    }
+
+    h1 { font-size: 4rem; }
+
+    p {
+        font-size: 1.5rem;
+        margin-right: 130px;
+    }
+}
